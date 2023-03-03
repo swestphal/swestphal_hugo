@@ -1,0 +1,16 @@
+## build pipeline
+steps:
+#1) Get theme
+    - name: gcr.io/cloud-builders/git
+      args:
+          - 'init'
+#2) Build site with Hugo
+#3) Build and push container
+#4) Stop running container, start new container
+
+#cloud-build-local\
+#        --config=cloudbuild.yaml\
+#        --dryrun=false \
+#        --write-workspace=../cloud-build-workspace
+#        --push=false
+#        .
